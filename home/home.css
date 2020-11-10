@@ -1,3 +1,4 @@
+/* Navbar */
 /* Add a black background color to the top navigation */
 .topnav {
     background: transparent;
@@ -17,8 +18,8 @@
   }
   
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -48,4 +49,182 @@
       display: block;
       text-align: left;
     }
+  }
+
+/* CSS portrait */
+  .portrait {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #13d4cd;
+    z-index: -4;
+    border-radius: 50%;
+  }
+  
+  .head {
+    position: absolute;
+    height: 130px;
+    width: 100px;
+    background: rgb(191, 158, 138);
+    border-radius: 40px;
+    top: 24%;
+    right: 35%;
+  }
+  
+  .head .eyes::before, .head .eyes::after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    background-color: transparent;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px; 
+    border: 5px solid black;
+    border-bottom: 0;
+  }
+  
+  .head .eyes {
+    display: inline-flex;
+    position: absolute;
+    top: 45px;
+    left: 15%;
+    gap: 10px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .head .eyes {
+      gap: 10px;
+    }
+  }
+  
+  .hair {
+    position: absolute;
+    height: 170px;
+    width: 160px;
+    background: #3d1b06;
+    z-index: -1;
+    left: 32.5%;
+    top: 15.5%;
+    border-radius: 50%;
+  }
+  
+  .bang {
+    position: absolute;
+    height: 50px;
+    width: 70px;
+    background: #3d1b06;
+    top: 23%;
+    left: 37%;
+    border-bottom-right-radius: 90%;
+  }
+  
+  .bun {
+    position: absolute;
+    width: 85px;
+    height: 65px;
+    background: #3d1b06;
+    left: 24%;
+    top: -21%;
+    border-top-left-radius: 55%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 55%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .bow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(219, 120, 159);
+    top: 50%;
+    left: 26%;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 90px;
+    transform: rotate(-45deg);
+  }
+  
+  .bow::after {
+    display: flex;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 15px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 90px;
+    background: rgb(219, 120, 159);
+    transform: rotate(180deg);
+  }
+  
+  .mouth {
+    position: absolute;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px; 
+    height: 20px;
+    width: 40px;
+    background: black;
+    top: 92px;
+    left: 40%;
+  }
+  
+  .tongue {
+    display: flex;
+    position: relative;
+    border-bottom-right-radius: 111px;
+    border-top-left-radius: 110px;
+    height: 10px;
+    width: 14.5px;
+    background: pink;
+    top: 10px;
+    left: 22px;
+  }
+  
+  .neck {
+    position: absolute;
+    height: 45px;
+    width: 40px;
+    background: rgb(191, 158, 138);
+    left: 47.5%;
+    top: 56%;
+    z-index: -1;
+  }
+  
+  .shadow {
+    width: 100%;
+    height: 10px;
+    background: #a38776;
+    top: 34px;
+  }
+  
+  .collar {
+    display: flex;
+    position: absolute;
+    width: 20px;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid #f799e0;
+    top: 62%;
+    right: 45.5%;
+  }
+  
+  .collar::after {
+    display: flex;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-bottom: 25px solid #d986c5;
+    transform: translateX(100%);
+    right: 4%;
+    z-index: -1;
   }
