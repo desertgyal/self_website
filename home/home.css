@@ -1,3 +1,7 @@
+body {
+  background: #ff9cee;
+  margin-bottom: 100px;
+}
 /* Navbar */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -28,7 +32,7 @@
   }
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -55,15 +59,15 @@
   .portrait {
     display: flex;
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     left: 0;
     right: 0;
     text-align: center;
-    background: #13d4cd;
+    background: #6ccf34;
     z-index: -4;
     border-radius: 50%;
   }
@@ -74,8 +78,8 @@
     width: 100px;
     background: rgb(191, 158, 138);
     border-radius: 40px;
-    top: 24%;
-    right: 35%;
+    top: 29.5%;
+    right: 38%;
   }
   
   .head .eyes::before, .head .eyes::after {
@@ -109,8 +113,8 @@
     width: 160px;
     background: #3d1b06;
     z-index: -1;
-    left: 32.5%;
-    top: 15.5%;
+    left: 24.5%;
+    top: 19.5%;
     border-radius: 50%;
   }
   
@@ -119,8 +123,8 @@
     height: 50px;
     width: 70px;
     background: #3d1b06;
-    top: 23%;
-    left: 37%;
+    top: 29.5%;
+    left: 30%;
     border-bottom-right-radius: 90%;
   }
   
@@ -193,8 +197,8 @@
     height: 45px;
     width: 40px;
     background: rgb(191, 158, 138);
-    left: 47.5%;
-    top: 56%;
+    left: 42%;
+    top: 65.5%;
     z-index: -1;
   }
   
@@ -212,8 +216,8 @@
     height: 0;
     border-right: 15px solid transparent;
     border-bottom: 25px solid #f799e0;
-    top: 62%;
-    right: 45.5%;
+    top: 73%;
+    right: 50%;
   }
   
   .collar::after {
@@ -228,3 +232,43 @@
     right: 4%;
     z-index: -1;
   }
+
+  /* Text div */
+  .text {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    top: 45%;
+    left: 0;
+    right: 0;
+    width: 550px;
+  }
+
+  h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-family: 'Dosis', sans-serif;
+    margin-top: -10%;
+    font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 1rem;
+    margin-top: 25px;
+  }
+
+  /* Footer */
+  footer {
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: red;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+ }
