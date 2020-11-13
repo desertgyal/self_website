@@ -2,8 +2,8 @@ body {
   background: #ff9cee;
   margin-bottom: 100px;
 }
-/* Navbar */
-/* Add a black background color to the top navigation */
+  /* Navbar */
+  /* Add a black background color to the top navigation */
 .topnav {
     background: transparent;
     overflow: hidden;
@@ -251,7 +251,7 @@ body {
   }
 
   .text p {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin-top: -10%;
     font-size: 1.5rem;
   }
@@ -267,8 +267,23 @@ body {
     position: fixed;
     left: 0px;
     bottom: 0px;
-    background-color: red;
+    background-color: #fab9ef;
     height: 50px;
     width: 100%;
     text-align: center;
  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+  }
+
+  ul {
+    display: flex;
+    margin: 20px auto;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
