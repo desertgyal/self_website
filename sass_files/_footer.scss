@@ -1,0 +1,28 @@
+ $background-color: #fab9ef;
+ $link-color: black;
+ /* Footer */
+ footer {
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: $background-color;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+ }
+
+  a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: $link-color;
+  }
+
+  ul {
+    display: flex;
+    margin: 20px auto;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
