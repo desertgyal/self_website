@@ -7,3 +7,16 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+  var collapse = document.getElementsByClassName("collapsible");
+  var imgs = document.getElementsByClassName("images");
+  var i;
+  
+    coll[i].addEventListener("click", function() {
+      var content = imgs;
+      if (content.style.display === "grid") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "grid";
+      }
+    });

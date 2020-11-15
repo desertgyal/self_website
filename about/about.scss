@@ -1,6 +1,85 @@
+$header-font: "Cedarville Cursive", cursive;
+$paragraph-font: "Quicksand", sans-serif;
+$images-background: #fcccf4;
 @use '../sass_files/navbar';
 @use '../sass_files/footer';
 body {
     background: #ff9cee;
     margin-bottom: 100px;
+  }
+
+  .pro-paragraph {
+    position: relative;
+  }
+  h1 {
+    font-family: $header-font;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: $paragraph-font;
+    text-align: center;
+    font-size: 15pt;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100vw;
+    background: $images-background;
+    img {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      width: 150px;
+      height: 200px;
+    }
+
+    #node {
+      width: 300px;
+    }
+    #jquery {
+      width: 300px;
+    }
+    #sass {
+      width: 200px;
+    }
+    #htmlcssjs, #sql, #java {
+      width: 250px;
+    }
+  }
+
+  @media screen and (min-width: 841px) {
+    .collapsible {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    .images {
+      display: none;
+      overflow: hidden;
+      grid-template-columns: auto;
+    }
+
+    .collapsible {
+      display: static;
+      background-color: $images-background;
+      color: black;
+      cursor: pointer;
+      padding: 18px;
+      width: 100vw;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-family: $paragraph-font;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
   }

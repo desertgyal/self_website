@@ -84,3 +84,80 @@ body {
   background: #ff9cee;
   margin-bottom: 100px;
 }
+
+.pro-paragraph {
+  position: relative;
+}
+
+h1 {
+  font-family: "Cedarville Cursive", cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 15pt;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100vw;
+  background: #fcccf4;
+}
+.images img {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 200px;
+}
+.images #node {
+  width: 300px;
+}
+.images #jquery {
+  width: 300px;
+}
+.images #sass {
+  width: 200px;
+}
+.images #htmlcssjs, .images #sql, .images #java {
+  width: 250px;
+}
+
+@media screen and (min-width: 841px) {
+  .collapsible {
+    display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  .images {
+    display: none;
+    overflow: hidden;
+    grid-template-columns: auto;
+  }
+
+  .collapsible {
+    display: static;
+    background-color: #fcccf4;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100vw;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
