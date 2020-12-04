@@ -5,4 +5,34 @@ body {
     background: #ff9cee;
     margin-bottom: 100px;
   }
-  
+
+.container h1 {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container h3 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+label {
+  font-family: 'Quicksand', sans-serif;
+} 
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 75vw;
+}
+
+#message {
+  height: 200px;
+}
+
+#send {
+  width: 100px;
+  height: 30px;
+  margin-left: 75%;
+}
