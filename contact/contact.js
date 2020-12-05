@@ -13,6 +13,6 @@ emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
        console.log('FAILED...', error);
     });
 
-// (function(){
-//     emailjs.init("YOUR_USER_ID");
-//  })();
+(function(){
+    emailjs.init("YOUR_USER_ID");
+ })();

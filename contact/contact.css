@@ -96,24 +96,4 @@ body {
   text-align: center;
 }
 
-label {
-  font-family: "Quicksand", sans-serif;
-}
-
-form {
-  display: grid;
-  grid-template-columns: auto auto;
-  width: 75vw;
-}
-
-#message {
-  height: 200px;
-}
-
-#send {
-  width: 100px;
-  height: 30px;
-  margin-left: 75%;
-}
-
 /*# sourceMappingURL=contact.css.map */
